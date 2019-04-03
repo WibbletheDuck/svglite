@@ -359,9 +359,9 @@ BEGIN_RCPP
   SVGDesc *svgd = (SVGDesc*) dd->deviceSpecific;
   SvgStreamPtr stream = svgd->stream;
 
-  if (svgd->pageno > 0) {
+/*  if (svgd->pageno > 0) {
     Rcpp::stop("svglite only supports one page");
-  }
+  }*/
 
   if (svgd->standalone)
     (*stream) << "<?xml version='1.0' encoding='UTF-8' ?>\n";
